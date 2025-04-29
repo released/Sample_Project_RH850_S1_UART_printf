@@ -9,7 +9,7 @@ update @ 2025/04/29
 
 - UART : RLIN3 (TX > P10_10 , RX > P10_9) , for printf and receive from keyboard
 
-- LED : LED18 > P0_14 , LED17 > P8_5
+- LED : LED18 > P0_14 , LED17 > P8_5 , toggle per 1000ms
  
 2. below is log message :
 
