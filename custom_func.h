@@ -75,6 +75,6 @@ void LED_Toggle(void);
 
 void loop(void);
 
-void UARTx_ErrorCheckProcess(uint8_t err);
+void UARTx_ErrorCheckProcess(unsigned char err);
 void UARTx_Process(unsigned char rxbuf);
 void hardware_init(void);

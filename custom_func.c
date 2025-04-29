@@ -38,9 +38,9 @@ volatile unsigned long ostmr_tick = 0U;
 
 #pragma section privateData
 
-const unsigned char dummy_3 = 0x5A;
+const unsigned char dummy_3 = 0x5AU;
 
-volatile unsigned char dummy_2 = 0xFF;
+volatile unsigned char dummy_2 = 0xFFU;
 
 volatile unsigned char dummy_1;
 
@@ -94,22 +94,43 @@ void tick_counter(void)
 	counter_tick++;
     if (get_tick() >= 60000U)
     {
-        set_tick(0);
+        set_tick(0U);
     }
 }
 
+void delay_ms(unsigned long ms)
+{
+    unsigned long tickstart = get_tick();
+    unsigned long wait = ms;
+	unsigned long tmp = 0;
+	
+    while (1)
+    {
+		if (get_tick() > tickstart)	// tickstart = 59000 , tick_counter = 60000
+		{
+			tmp = get_tick() - tickstart;
+		}
+		else // tickstart = 59000 , tick_counter = 2048
+		{
+			tmp = 60000U -  tickstart + get_tick();
+		}		
+		
+		if (tmp > wait)
+			break;
+    }
+}
 void tmr_1ms_IRQ(void)
 {
     tick_counter();
 
     if ((get_tick() % 1000U) == 0U)
     {
-        FLAG_PROJ_TIMER_PERIOD_1000MS = 1;
+        FLAG_PROJ_TIMER_PERIOD_1000MS = 1U;
     }
 
     if ((get_tick() % 250U) == 0U)
     {
-        FLAG_PROJ_TIMER_PERIOD_SPECIFIC = 1;
+        FLAG_PROJ_TIMER_PERIOD_SPECIFIC = 1U;
     }
 
     if ((get_tick() % 50U) == 0U)
@@ -156,7 +177,7 @@ void loop(void)
     }
 }
 
-void UARTx_ErrorCheckProcess(uint8_t err)
+void UARTx_ErrorCheckProcess(unsigned char err)
 {
     if (err)          /* Check reception error */
     {   
@@ -182,12 +203,12 @@ void UARTx_ErrorCheckProcess(uint8_t err)
 
 void UARTx_Process(unsigned char rxbuf)
 {    
-    if (rxbuf == 0x00)
+    if (rxbuf == 0x00U)
     {
         return;
     }
 
-    if (rxbuf > 0x7F)
+    if (rxbuf > 0x7FU)
     {
         tiny_printf("invalid command\r\n");
     }
