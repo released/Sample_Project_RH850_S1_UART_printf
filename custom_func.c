@@ -71,7 +71,7 @@ void ostmr_1ms_IRQ(void)
 void ostimer_dealyms(unsigned long ms)
 {
     R_Config_OSTM0_Start();
-    ostmr_tick = 0;
+    ostmr_tick = 0U;
 
     while(ostmr_tick < ms);
 
@@ -102,7 +102,7 @@ void delay_ms(unsigned long ms)
 {
     unsigned long tickstart = get_tick();
     unsigned long wait = ms;
-	unsigned long tmp = 0;
+	unsigned long tmp = 0U;
 	
     while (1)
     {
@@ -197,7 +197,7 @@ void UARTx_ErrorCheckProcess(unsigned char err)
                 tiny_printf("uart rx:Bit Error Flag\r\n");
                 break;
         }
-        g_uart0rxerr = 0;
+        g_uart0rxerr = 0U;
     }
 }
 
@@ -275,7 +275,6 @@ void hardware_init(void)
         LED : 
             - LED18 > P0_14
             - LED17 > P8_5 
-
         UART : 
             - TX > P10_10
             - RX > P10_9    
@@ -284,4 +283,5 @@ void hardware_init(void)
     R_Config_UART0_Start();
    
     tiny_printf("\r\nhardware_init rdy\r\n");
+
 }
