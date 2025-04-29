@@ -33,13 +33,7 @@ Includes
 #include "Config_TAUJ0_0.h"
 #include "Config_OSTM0.h"
 #include "Config_PORT.h"
-#include "Config_INTC.h"
-#include "Config_RIIC0.h"
-#include "Config_CSIG0.h"
-#include "Config_CSIH0.h"
 #include "Config_UART0.h"
-#include "Config_TAUB0.h"
-#include "Config_ADCA0.h"
 #include "r_cg_cgc.h"
 
 #ifndef SMC_ENTRY_H

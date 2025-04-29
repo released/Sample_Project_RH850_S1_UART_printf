@@ -102,17 +102,17 @@ void tmr_1ms_IRQ(void)
 {
     tick_counter();
 
-    if ((get_tick() % 1000U) == 0)
+    if ((get_tick() % 1000U) == 0U)
     {
         FLAG_PROJ_TIMER_PERIOD_1000MS = 1;
     }
 
-    if ((get_tick() % 250U) == 0)
+    if ((get_tick() % 250U) == 0U)
     {
         FLAG_PROJ_TIMER_PERIOD_SPECIFIC = 1;
     }
 
-    if ((get_tick() % 50U) == 0)
+    if ((get_tick() % 50U) == 0U)
     {
 
     }	
@@ -261,15 +261,6 @@ void hardware_init(void)
     */
     R_Config_UART0_Receive(&g_uart0rxbuf, 1U);
     R_Config_UART0_Start();
-
-    // R_Config_INTC_INTP2_Start();
-    // R_Config_RIIC0_Start();
-    // R_Config_CSIG0_Start();
-    // R_Config_CSIH0_Start();
-    // R_Config_TAUB0_Start();
-    // R_Config_ADCA0_ScanGroup1_Start();
-    // R_Config_ADCA0_ScanGroup1_OperationOn();
-    
+   
     tiny_printf("\r\nhardware_init rdy\r\n");
-
 }

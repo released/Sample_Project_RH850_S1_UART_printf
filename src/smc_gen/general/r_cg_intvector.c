@@ -83,7 +83,7 @@ extern void eiint16(void);
 /* TAPA0 valley interrupt 0; */
 extern void eiint17(void);
 /* ADCA0 SG1 end interrupt; */
-extern void r_Config_ADCA0_scan_group1_end_interrupt(void);
+extern void eiint18(void);
 /* ADCA0 SG2 end interrupt; */
 extern void eiint19(void);
 /* ADCA0 SG3 end interrupt; */
@@ -101,15 +101,15 @@ extern void eiint25(void);
 /* CAN0 transmit interrupt; */
 extern void eiint26(void);
 /* CSIG0 communication status interrupt; */
-extern void r_Config_CSIG0_interrupt_send(void);
+extern void eiint27(void);
 /* CSIG0 receive status interrupt; */
 extern void eiint28(void);
 /* CSIH0 communication status interrupt; */
-extern void r_Config_CSIH0_interrupt_send(void);
+extern void eiint29(void);
 /* CSIH0 receive status interrupt; */
 extern void eiint30(void);
 /* CSIH0 communication error interrupt; */
-extern void r_Config_CSIH0_interrupt_error(void);
+extern void eiint31(void);
 /* CSIH0 job completion interrupt; */
 extern void eiint32(void);
 /* RLIN30 interrupt; */
@@ -125,7 +125,7 @@ extern void eiint37(void);
 /* External interrupt; */
 extern void eiint38(void);
 /* External interrupt; */
-extern void r_Config_INTC_intp2_interrupt(void);
+extern void eiint39(void);
 /* WDTA0 75% interrupt; */
 extern void eiint40(void);
 /* WDTA1 75% interrupt; */
@@ -159,9 +159,9 @@ extern void eiint54(void);
 /* Interrupt for TAUD0 channel 15; */
 extern void eiint55(void);
 /* ADCA0 error interrupt; */
-extern void r_Config_ADCA0_error_interrupt(void);
+extern void eiint56(void);
 /* CSIG0 communication error interrupt; */
-extern void r_Config_CSIG0_interrupt_error(void);
+extern void eiint57(void);
 /* RLIN20 interrupt; */
 extern void eiint58(void);
 /* RLIN21 interrupt; */
@@ -199,13 +199,13 @@ extern void eiint74(void);
 /* DMA17 transfer completion; */
 extern void eiint75(void);
 /* RIIC0 transmit data empty interrupt; */
-extern void r_Config_RIIC0_transmit_interrupt(void);
+extern void eiint76(void);
 /* RIIC0 receive error/event interrupt; */
-extern void r_Config_RIIC0_error_interrupt(void);
+extern void eiint77(void);
 /* RIIC0 receive complete interrupt; */
-extern void r_Config_RIIC0_receive_interrupt(void);
+extern void eiint78(void);
 /* RIIC0 transmit complete interrupt; */
-extern void r_Config_RIIC0_transmitend_interrupt(void);
+extern void eiint79(void);
 /* Interrupt for TAUJ0 channel 0; */
 extern void r_Config_TAUJ0_0_interrupt(void);
 /* Interrupt for TAUJ0 channel 1; */
@@ -331,11 +331,11 @@ extern void eiint140(void);
 /* Reserved; */
 extern void eiint141(void);
 /* Interrupt for TAUB0 channel 0; */
-extern void r_Config_TAUB0_channel0_interrupt(void);
+extern void eiint142(void);
 /* Interrupt for TAUB0 channel 1; */
-extern void r_Config_TAUB0_channel1_interrupt(void);
+extern void eiint143(void);
 /* Interrupt for TAUB0 channel 2; */
-extern void r_Config_TAUB0_channel2_interrupt(void);
+extern void eiint144(void);
 /* Interrupt for TAUB0 channel 3; */
 extern void eiint145(void);
 /* Interrupt for TAUB0 channel 4; */
@@ -802,7 +802,7 @@ void * const INT_Vectors[] = {
     /* TAPA0 valley interrupt 0; */
     (void *)eiint17,
     /* ADCA0 SG1 end interrupt; */
-    (void *)r_Config_ADCA0_scan_group1_end_interrupt,
+    (void *)eiint18,
     /* ADCA0 SG2 end interrupt; */
     (void *)eiint19,
     /* ADCA0 SG3 end interrupt; */
@@ -820,15 +820,15 @@ void * const INT_Vectors[] = {
     /* CAN0 transmit interrupt; */
     (void *)eiint26,
     /* CSIG0 communication status interrupt; */
-    (void *)r_Config_CSIG0_interrupt_send,
+    (void *)eiint27,
     /* CSIG0 receive status interrupt; */
     (void *)eiint28,
     /* CSIH0 communication status interrupt; */
-    (void *)r_Config_CSIH0_interrupt_send,
+    (void *)eiint29,
     /* CSIH0 receive status interrupt; */
     (void *)eiint30,
     /* CSIH0 communication error interrupt; */
-    (void *)r_Config_CSIH0_interrupt_error,
+    (void *)eiint31,
     /* CSIH0 job completion interrupt; */
     (void *)eiint32,
     /* RLIN30 interrupt; */
@@ -844,7 +844,7 @@ void * const INT_Vectors[] = {
     /* External interrupt; */
     (void *)eiint38,
     /* External interrupt; */
-    (void *)r_Config_INTC_intp2_interrupt,
+    (void *)eiint39,
     /* WDTA0 75% interrupt; */
     (void *)eiint40,
     /* WDTA1 75% interrupt; */
@@ -878,9 +878,9 @@ void * const INT_Vectors[] = {
     /* Interrupt for TAUD0 channel 15; */
     (void *)eiint55,
     /* ADCA0 error interrupt; */
-    (void *)r_Config_ADCA0_error_interrupt,
+    (void *)eiint56,
     /* CSIG0 communication error interrupt; */
-    (void *)r_Config_CSIG0_interrupt_error,
+    (void *)eiint57,
     /* RLIN20 interrupt; */
     (void *)eiint58,
     /* RLIN21 interrupt; */
@@ -918,13 +918,13 @@ void * const INT_Vectors[] = {
     /* DMA17 transfer completion; */
     (void *)eiint75,
     /* RIIC0 transmit data empty interrupt; */
-    (void *)r_Config_RIIC0_transmit_interrupt,
+    (void *)eiint76,
     /* RIIC0 receive error/event interrupt; */
-    (void *)r_Config_RIIC0_error_interrupt,
+    (void *)eiint77,
     /* RIIC0 receive complete interrupt; */
-    (void *)r_Config_RIIC0_receive_interrupt,
+    (void *)eiint78,
     /* RIIC0 transmit complete interrupt; */
-    (void *)r_Config_RIIC0_transmitend_interrupt,
+    (void *)eiint79,
     /* Interrupt for TAUJ0 channel 0; */
     (void *)r_Config_TAUJ0_0_interrupt,
     /* Interrupt for TAUJ0 channel 1; */
@@ -1050,11 +1050,11 @@ void * const INT_Vectors[] = {
     /* Reserved; */
     (void *)eiint141,
     /* Interrupt for TAUB0 channel 0; */
-    (void *)r_Config_TAUB0_channel0_interrupt,
+    (void *)eiint142,
     /* Interrupt for TAUB0 channel 1; */
-    (void *)r_Config_TAUB0_channel1_interrupt,
+    (void *)eiint143,
     /* Interrupt for TAUB0 channel 2; */
-    (void *)r_Config_TAUB0_channel2_interrupt,
+    (void *)eiint144,
     /* Interrupt for TAUB0 channel 3; */
     (void *)eiint145,
     /* Interrupt for TAUB0 channel 4; */
