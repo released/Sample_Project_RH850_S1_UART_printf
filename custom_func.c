@@ -31,7 +31,7 @@ volatile struct flag_32bit flag_PROJ_CTL;
 
 /*_____ D E F I N I T I O N S ______________________________________________*/
 
-volatile unsigned int counter_tick = 0U;
+volatile unsigned short counter_tick = 0U;
 volatile unsigned long ostmr_tick = 0U;
 
 #define BTN_PRESSED_LONG                                (2500U)
@@ -46,11 +46,10 @@ volatile unsigned char dummy_1;
 
 #pragma section default
 
-
 volatile unsigned long g_u32_counter = 0U;
 
-uint8_t  g_uart0rxbuf = 0U;                                 /* UART0 receive buffer */
-uint8_t  g_uart0rxerr = 0U;                                 /* UART0 receive error status */
+unsigned char g_uart0rxbuf = 0U;                                 /* UART0 receive buffer */
+unsigned char g_uart0rxerr = 0U;                                 /* UART0 receive error status */
 
 /*_____ M A C R O S ________________________________________________________*/
 
@@ -79,12 +78,12 @@ void ostimer_dealyms(unsigned long ms)
 
 }
 
-unsigned int get_tick(void)
+unsigned short get_tick(void)
 {
 	return (counter_tick);
 }
 
-void set_tick(unsigned int t)
+void set_tick(unsigned short t)
 {
 	counter_tick = t;
 }
@@ -160,7 +159,7 @@ void LED_Toggle(void)
 
 void loop(void)
 {
-	static uint32_t LOG1 = 0U;
+	static unsigned long LOG1 = 0U;
 
     if (FLAG_PROJ_TIMER_PERIOD_1000MS)
     {
@@ -249,7 +248,7 @@ void UARTx_Process(unsigned char rxbuf)
     }
 }
 
-void RLIN3_UART_SendChar(int c)
+void RLIN3_UART_SendChar(unsigned char c)
 {
     /*
         UTS : 0 - transmission is not in progress    
@@ -259,7 +258,7 @@ void RLIN3_UART_SendChar(int c)
     // RLN30.LUTDR.UINT8[L] = (unsigned char) c;  
 }
 
-void SendChar(int ch)
+void SendChar(unsigned char ch)
 {
     RLIN3_UART_SendChar(ch);
 }
