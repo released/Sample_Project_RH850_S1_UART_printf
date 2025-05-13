@@ -50,8 +50,6 @@ void r_Config_UART0_callback_receiveend(void);
 void r_Config_UART0_callback_sendend(void);
 void r_Config_UART0_callback_error(uint32_t err_type);
 /* Start user code for global. Do not edit comment generated here */
-extern uint8_t g_uart0rxbuf;                          /* UART0 receive buffer */
-extern uint8_t g_uart0rxerr;                          /* UART0 receive error status */
 /* End user code. Do not edit comment generated here */
 
 /***********************************************************************************************************************
@@ -152,8 +150,8 @@ void r_Config_UART0_callback_sendend(void)
 void r_Config_UART0_callback_error(uint32_t err_type)
 {
     /* Start user code for r_Config_UART0_callback_error. Do not edit comment generated here */
-      g_uart0rxerr = err_type;    /* Get error type */
-      UARTx_ErrorCheckProcess(g_uart0rxerr);
+      UART0Manager.g_uart0rxerr = err_type;    /* Get error type */
+      UARTx_ErrorCheckProcess(UART0Manager.g_uart0rxerr);
     /* End user code. Do not edit comment generated here */
 }
 
@@ -166,9 +164,9 @@ void r_Config_UART0_callback_error(uint32_t err_type)
 void r_Config_UART0_callback_receiveend(void)
 {
     /* Start user code for r_Config_UART0_callback_receiveend. Do not edit comment generated here */
-    g_uart0rxerr = 0U;          /* Clear error flag */
-    UARTx_Process(g_uart0rxbuf);
-    R_Config_UART0_Receive(&g_uart0rxbuf, 1U);
+    UART0Manager.g_uart0rxerr = 0U;          /* Clear error flag */
+    UARTx_Process(UART0Manager.g_uart0rxbuf);
+    R_Config_UART0_Receive((uint8_t *)&UART0Manager.g_uart0rxbuf, 1U);
     /* End user code. Do not edit comment generated here */
 }
 

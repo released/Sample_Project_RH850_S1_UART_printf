@@ -48,8 +48,12 @@ volatile unsigned char dummy_1;
 
 volatile unsigned long g_u32_counter = 0U;
 
-unsigned char g_uart0rxbuf = 0U;                                 /* UART0 receive buffer */
-unsigned char g_uart0rxerr = 0U;                                 /* UART0 receive error status */
+volatile UART_MANAGER_T UART0Manager = 
+{
+	.g_uart0rxbuf = 0U,                                         /* UART0 receive buffer */
+	.g_uart0rxerr = 0U,                                         /* UART0 receive error status */
+};
+
 
 /*_____ M A C R O S ________________________________________________________*/
 
@@ -121,7 +125,7 @@ void delay_ms(unsigned long ms)
 
 unsigned char R_PORT_GetGPIOLevel(unsigned short n,unsigned char Pin)
 {
-    uint16_t PortLevel;
+    unsigned short PortLevel;
 
     switch(n)
     {
@@ -233,7 +237,7 @@ void UARTx_ErrorCheckProcess(unsigned char err)
                 tiny_printf("uart rx:Bit Error Flag\r\n");
                 break;
         }
-        g_uart0rxerr = 0U;
+        UART0Manager.g_uart0rxerr = 0U;
     }
 }
 
@@ -285,12 +289,12 @@ void UARTx_Process(unsigned char rxbuf)
 
 void RH850_software_reset(void)
 {
-    uint32_t  reg32_value;
+    unsigned long  reg32_value;
 
     reg32_value = 0x00000001UL;
     WPROTR.PROTCMD0 = _WRITE_PROTECT_COMMAND;
     RESCTL.SWRESA = reg32_value;
-    RESCTL.SWRESA = (uint32_t) ~reg32_value;
+    RESCTL.SWRESA = (unsigned long) ~reg32_value;
     RESCTL.SWRESA = reg32_value;
     while (WPROTR.PROTS0 != reg32_value)
     {
@@ -328,7 +332,7 @@ void hardware_init(void)
             - TX > P10_10
             - RX > P10_9    
     */
-    R_Config_UART0_Receive(&g_uart0rxbuf, 1U);
+    R_Config_UART0_Receive((uint8_t *)&UART0Manager.g_uart0rxbuf, 1U);
     R_Config_UART0_Start();
    
     tiny_printf("\r\nhardware_init rdy\r\n");

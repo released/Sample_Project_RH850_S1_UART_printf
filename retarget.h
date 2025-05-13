@@ -1,3 +1,6 @@
+#ifndef __RETARGET_H__
+#define __RETARGET_H__
+
 /*_____ I N C L U D E S ____________________________________________________*/
 // #include <stdio.h>
 #include <string.h>
@@ -27,3 +30,5 @@ int putchar(int c);
 // int puts(const char *s);
 
 int tiny_printf(const char *fmt, ...);
+
+#endif //__RETARGET_H__

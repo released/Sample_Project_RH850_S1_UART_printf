@@ -1,3 +1,6 @@
+#ifndef __MISC_CONFIG_H__
+#define __MISC_CONFIG_H__
+
 /*_____ I N C L U D E S ____________________________________________________*/
 // #include <stdio.h>
 #include <string.h>
@@ -172,3 +175,5 @@ void dump_buffer16(unsigned short *pucBuff, int nBytes);
 void dump_buffer16_hex(unsigned short *pucBuff, int nBytes);
 void dump_buffer8(unsigned char *pucBuff, int nBytes);
 void dump_buffer8_hex(unsigned char *pucBuff, int nBytes);
+
+#endif //__MISC_CONFIG_H__
