@@ -79,7 +79,7 @@ typedef unsigned char      								bool;
 		uint16_t* pu16Far;
 	}PERIPHERAL_MANAGER_T;
 
-	PERIPHERAL_MANAGER_T g_PeripheralManager = 
+	volatile PERIPHERAL_MANAGER_T g_PeripheralManager = 
 	{
 		.u8Cmd = 0,
 		.au8Buf = {0},		//.au8Buf = {100U, 200U},
@@ -87,7 +87,7 @@ typedef unsigned char      								bool;
 		.bByPass = FALSE,
 		.pu16Far = NULL,	//.pu16Far = 0	
 	};
-	extern PERIPHERAL_MANAGER_T g_PeripheralManager;
+	extern volatile PERIPHERAL_MANAGER_T g_PeripheralManager;
 */
 
 typedef struct _uart_manager_t

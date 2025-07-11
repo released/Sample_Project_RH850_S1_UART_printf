@@ -21,62 +21,62 @@ struct flag_8bit
 
 struct flag_16bit
 {
-	unsigned short bit0:1 ;
-	unsigned short bit1:1 ;
-	unsigned short bit2:1 ;
-	unsigned short bit3:1 ;
-	unsigned short bit4:1 ;
-	unsigned short bit5:1 ;
-	unsigned short bit6:1 ;
-	unsigned short bit7:1 ;
+	unsigned char bit0:1 ;
+	unsigned char bit1:1 ;
+	unsigned char bit2:1 ;
+	unsigned char bit3:1 ;
+	unsigned char bit4:1 ;
+	unsigned char bit5:1 ;
+	unsigned char bit6:1 ;
+	unsigned char bit7:1 ;
 
-	unsigned short bit8:1 ;
-	unsigned short bit9:1 ;
-	unsigned short bit10:1 ;
-	unsigned short bit11:1 ;
-	unsigned short bit12:1 ;
-	unsigned short bit13:1 ;
-	unsigned short bit14:1 ;
-	unsigned short bit15:1 ;	
+	unsigned char bit8:1 ;
+	unsigned char bit9:1 ;
+	unsigned char bit10:1 ;
+	unsigned char bit11:1 ;
+	unsigned char bit12:1 ;
+	unsigned char bit13:1 ;
+	unsigned char bit14:1 ;
+	unsigned char bit15:1 ;	
 };
 
 struct flag_32bit
 {
-	unsigned int bit0:1 ;
-	unsigned int bit1:1 ;
-	unsigned int bit2:1 ;
-	unsigned int bit3:1 ;
-	unsigned int bit4:1 ;
-	unsigned int bit5:1 ;
-	unsigned int bit6:1 ;
-	unsigned int bit7:1 ;
+	unsigned char bit0:1 ;
+	unsigned char bit1:1 ;
+	unsigned char bit2:1 ;
+	unsigned char bit3:1 ;
+	unsigned char bit4:1 ;
+	unsigned char bit5:1 ;
+	unsigned char bit6:1 ;
+	unsigned char bit7:1 ;
 
-	unsigned int bit8:1 ;
-	unsigned int bit9:1 ;
-	unsigned int bit10:1 ;
-	unsigned int bit11:1 ;
-	unsigned int bit12:1 ;
-	unsigned int bit13:1 ;
-	unsigned int bit14:1 ;
-	unsigned int bit15:1 ;	
+	unsigned char bit8:1 ;
+	unsigned char bit9:1 ;
+	unsigned char bit10:1 ;
+	unsigned char bit11:1 ;
+	unsigned char bit12:1 ;
+	unsigned char bit13:1 ;
+	unsigned char bit14:1 ;
+	unsigned char bit15:1 ;	
 
-	unsigned int bit16:1 ;
-	unsigned int bit17:1 ;
-	unsigned int bit18:1 ;
-	unsigned int bit19:1 ;
-	unsigned int bit20:1 ;
-	unsigned int bit21:1 ;
-	unsigned int bit22:1 ;
-	unsigned int bit23:1 ;
+	unsigned char bit16:1 ;
+	unsigned char bit17:1 ;
+	unsigned char bit18:1 ;
+	unsigned char bit19:1 ;
+	unsigned char bit20:1 ;
+	unsigned char bit21:1 ;
+	unsigned char bit22:1 ;
+	unsigned char bit23:1 ;
 
-	unsigned int bit24:1 ;
-	unsigned int bit25:1 ;
-	unsigned int bit26:1 ;
-	unsigned int bit27:1 ;
-	unsigned int bit28:1 ;
-	unsigned int bit29:1 ;
-	unsigned int bit30:1 ;
-	unsigned int bit31:1 ;
+	unsigned char bit24:1 ;
+	unsigned char bit25:1 ;
+	unsigned char bit26:1 ;
+	unsigned char bit27:1 ;
+	unsigned char bit28:1 ;
+	unsigned char bit29:1 ;
+	unsigned char bit30:1 ;
+	unsigned char bit31:1 ;
 };
 
 /*_____ D E F I N I T I O N S ______________________________________________*/
@@ -114,6 +114,9 @@ struct flag_32bit
 #define clr_BIT1(x)        							(x&=0xFD)
 #define clr_BIT0(x)        							(x&=0xFE)
 
+#define PERIPHERALREG_SET(r,n,val) 					(r |= (((unsigned long)val)<<n))
+#define PERIPHERALREG_CLR(r,n,val) 					(r &= (0xFFFFFFFF -(val<<n)))
+#define PERIPHERALREG_READ(r,n,val) 				((r &(val<<n))>>n)
 
 //MACRO : Swap Integers Macro
 #ifndef SWAP
@@ -168,9 +171,11 @@ struct flag_32bit
 #endif
 
 /*_____ F U N C T I O N S __________________________________________________*/
-void compare_buffer(unsigned char *src, unsigned char *des, int nBytes);
-void reset_buffer(void *dest, unsigned int val, unsigned int size);
-void copy_buffer(void *dest, void *src, unsigned int size);
+int compare_buffer(const void *src, const void *dest, size_t nBytes);
+void reset_buffer(void *dest, unsigned long val, unsigned long size);
+void copy_buffer(void *dest, void *src, unsigned long size);
+void dump_buffer32(unsigned long *pucBuff, int nBytes);
+void dump_buffer32_hex(unsigned long *pucBuff, int nBytes);
 void dump_buffer16(unsigned short *pucBuff, int nBytes);
 void dump_buffer16_hex(unsigned short *pucBuff, int nBytes);
 void dump_buffer8(unsigned char *pucBuff, int nBytes);

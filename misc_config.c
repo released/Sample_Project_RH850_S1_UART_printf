@@ -20,9 +20,9 @@ struct flag_8bit flag_MISC_CTL;
 typedef void (*sys_pvTimeFunPtr)(void);   /* function pointer */
 typedef struct timeEvent_t
 {
-    unsigned char             active;
-    unsigned int       initTick;
-    unsigned int       curTick;
+    unsigned char       active;
+    unsigned long       initTick;
+    unsigned long       curTick;
     sys_pvTimeFunPtr    funPtr;
 } TimeEvent_T;
 
@@ -35,43 +35,21 @@ volatile unsigned char _sys_uTimerEventCount = 0;             /* Speed up interr
 
 /*_____ F U N C T I O N S __________________________________________________*/
 
-void compare_buffer(unsigned char *src, unsigned char *des, int nBytes)
+int compare_buffer(const void *src, const void *dest, size_t nBytes)
 {
-    unsigned short  i = 0;	
-	
-    #if 1
-    for (i = 0; i < nBytes; i++)
-    {
-        if (src[i] != des[i])
-        {
-            dbg_printf("error idx : %4d : 0x%2X , 0x%2X\r\n", i , src[i],des[i]);
-			FLAG_MISC_ERROR = 1;//set_flag(flag_error , ENABLE);
-        }
+    if (memcmp(src, dest, nBytes) == 0) {
+        dbg_printf("compare_buffer complete\r\n");
+        return 0;
     }
 
-	if (!FLAG_MISC_ERROR)//(!is_flag_set(flag_error))
-	{
-    	dbg_printf("compare_buffer complete \r\n");	
-	}
-
-    dbg_printf("compare_buffer end \r\n");
-	FLAG_MISC_ERROR = 0;//set_flag(flag_error , DISABLE);	    
-    #else
-    if (memcmp(src, des, nBytes))
-    {
-        dbg_printf("\nMismatch!! - %d\n", nBytes);
-        for (i = 0; i < nBytes; i++)
-            dbg_printf("0x%02x    0x%02x\n", src[i], des[i]);
-        return -1;
-    }
-    #endif
-
+    dbg_printf("Mismatch!! - %zu bytes\r\n", nBytes);
+    return 1;
 }
 
-void reset_buffer(void *dest, unsigned int val, unsigned int size)
+void reset_buffer(void *dest, unsigned long val, unsigned long size)
 {
     unsigned char *pu8Dest;
-//    unsigned int i;
+//    unsigned lpng i;
     
     pu8Dest = (unsigned char *)dest;
 
@@ -84,10 +62,10 @@ void reset_buffer(void *dest, unsigned int val, unsigned int size)
 	
 }
 
-void copy_buffer(void *dest, void *src, unsigned int size)
+void copy_buffer(void *dest, void *src, unsigned long size)
 {
     unsigned char *pu8Src, *pu8Dest;
-    unsigned int i;
+    unsigned long i;
     
     pu8Dest = (unsigned char *)dest;
     pu8Src  = (unsigned char *)src;
@@ -102,6 +80,47 @@ void copy_buffer(void *dest, void *src, unsigned int size)
 	#endif
 }
 
+
+void dump_buffer32(unsigned long *pucBuff, int nBytes)
+{
+    unsigned short  i = 0;
+    
+    dbg_printf("dump_buffer : %2d\r\n" , nBytes);    
+    for (i = 0 ; i < nBytes ; i++)
+    {
+        dbg_printf("0x%08X," , pucBuff[i]);
+        if ((i+1)%4 ==0)
+        {
+            dbg_printf("\r\n");
+        }            
+    }
+    dbg_printf("\r\n");
+}
+
+void dump_buffer32_hex(unsigned long *pucBuff, int nBytes)
+{
+    int nIdx, i;
+
+    nIdx = 0;
+    while (nBytes > 0)
+    {
+        dbg_printf("0x%04X  ", nIdx);
+        for (i = 0; i < 4; i++)
+            dbg_printf("%08X ", pucBuff[nIdx + i]);
+        dbg_printf("  ");
+        for (i = 0; i < 4; i++)
+        {
+            if ((pucBuff[nIdx + i] >= 0x20) && (pucBuff[nIdx + i] < 127))
+                dbg_printf("%c", pucBuff[nIdx + i]);
+            else
+                dbg_printf(".");
+            nBytes--;
+        }
+        nIdx += 4;
+        dbg_printf("\n");
+    }
+    dbg_printf("\n");
+}
 
 void dump_buffer16(unsigned short *pucBuff, int nBytes)
 {
@@ -208,7 +227,7 @@ void TickClearTickEvent(unsigned char u8TimeEventID)
     }
 }
 
-signed char TickSetTickEvent(unsigned int uTimeTick, void *pvFun)
+signed char TickSetTickEvent(unsigned long uTimeTick, void *pvFun)
 {
     int  i;
     int u8TimeEventID = 0;
