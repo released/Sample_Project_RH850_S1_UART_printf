@@ -1,9 +1,9 @@
-﻿<CubeSuiteProject>
-  <ProductVersion>9.11.00.00</ProductVersion>
+﻿<CubeSuiteProject PackageVersion="V8.13.00  [05 Dec 2024]">
+  <ProductVersion>9.13.00.00</ProductVersion>
   <Class Guid="68f4a651-b9cd-473b-a595-b00447132ffa">
     <Instance Guid="00000000-0000-0000-0000-000000000000">
       <FormatVersion>2.0</FormatVersion>
-      <FileVersion>9.11</FileVersion>
+      <FileVersion>9.13</FileVersion>
       <ProjectGuid>6aaa356a-3dc6-4897-a319-9f0b7797fcf6</ProjectGuid>
       <ProjectItemGuid>72e07859-08b3-42fc-9108-4dd620e758c1</ProjectItemGuid>
       <FileCategoryGuid>4750b19e-6567-4899-94db-8f6cffb395d2</FileCategoryGuid>
@@ -431,9 +431,9 @@
       <SetAllBuildModeValue-DefaultValue>False</SetAllBuildModeValue-DefaultValue>
       <AsmOptionD-DefaultValue />
       <COptionISystem-DefaultValue />
-      <DependencyFileExistCheckingType-DefaultValue>Rebuild</DependencyFileExistCheckingType-DefaultValue>
       <GeneralOptionCoreCPU-DefaultValue>G3KH</GeneralOptionCoreCPU-DefaultValue>
       <GeneralOptionCurrentDevice-DefaultValue>DR7F701684.DVF, V1.40</GeneralOptionCurrentDevice-DefaultValue>
+      <GeneralOptionGroupMessages-DefaultValue>False</GeneralOptionGroupMessages-DefaultValue>
       <GeneralOptionR4-DefaultValue>None</GeneralOptionR4-DefaultValue>
       <GeneralOptionResetVectorAddressPE2-DefaultValue />
       <GeneralOptionXep-DefaultValue>None</GeneralOptionXep-DefaultValue>
@@ -442,6 +442,7 @@
       <LibOptionOutputFileName-DefaultValue>%ProjectName%.lib</LibOptionOutputFileName-DefaultValue>
       <LinkOptionOutputFileName-DefaultValue>%ProjectName%.abs</LinkOptionOutputFileName-DefaultValue>
       <COptionD-DefaultValue />
+      <DependencyFileExistCheckingType-DefaultValue>Rebuild</DependencyFileExistCheckingType-DefaultValue>
       <GeneralOptionOutputBitIOR-DefaultValue>False</GeneralOptionOutputBitIOR-DefaultValue>
       <GeneralOptionResetVectorAddressPE3-DefaultValue />
       <GeneralOptionXcref-DefaultValue>False</GeneralOptionXcref-DefaultValue>
@@ -480,7 +481,7 @@
       <GeneralOptionResetVectorAddressPE14-DefaultValue />
       <GeneralOptionResetVectorAddressPE15-DefaultValue />
       <IsLockedByUser>False</IsLockedByUser>
-      <TimeTagModified--0>-8584742581597023969</TimeTagModified--0>
+      <TimeTagModified--0>-8584487639896052961</TimeTagModified--0>
       <BuildMode-0>DefaultBuild</BuildMode-0>
       <Memo-0 />
       <SetAllBuildModeValue-0>False</SetAllBuildModeValue-0>
@@ -505,12 +506,13 @@
       <GeneralOptionXerrorFolder-0>%BuildModeName%</GeneralOptionXerrorFolder-0>
       <GeneralOptionXnoWarning-0 />
       <GeneralOptionXreserveR2-0>False</GeneralOptionXreserveR2-0>
-      <DependencyFileExistCheckingType-0>Rebuild</DependencyFileExistCheckingType-0>
       <GeneralOptionCoreCPU-0>G3KH</GeneralOptionCoreCPU-0>
+      <GeneralOptionGroupMessages-0>False</GeneralOptionGroupMessages-0>
       <GeneralOptionR4-0>None</GeneralOptionR4-0>
       <GeneralOptionResetVectorAddressPE2-0 />
       <GeneralOptionXep-0>None</GeneralOptionXep-0>
       <GeneralOptionXerrorFileName-0>%ProjectName%.err</GeneralOptionXerrorFileName-0>
+      <DependencyFileExistCheckingType-0>Rebuild</DependencyFileExistCheckingType-0>
       <GeneralOptionOutputBitIOR-0>False</GeneralOptionOutputBitIOR-0>
       <GeneralOptionResetVectorAddressPE3-0 />
       <GeneralOptionXcref-0>False</GeneralOptionXcref-0>
@@ -520,7 +522,7 @@
       <GeneralOptionOtherAdditionalOptions-0 />
       <GeneralOptionResetVectorAddressPE6-0 />
       <GeneralOptionResetVectorAddressPE7-0 />
-      <LastCompilerVersion-0>V2.06.00</LastCompilerVersion-0>
+      <LastCompilerVersion-0>V2.07.00</LastCompilerVersion-0>
       <GeneralOptionResetVectorAddressD-0>0</GeneralOptionResetVectorAddressD-0>
     </Instance>
     <Instance Guid="24e7db6c-6f3c-483e-b3af-c4be92050d3b">
@@ -1742,6 +1744,8 @@ src\smc_gen\Config_OSTM0
       <DebuggerProperty-HookProperty-HookTransaction-Disconnecting-Length>0</DebuggerProperty-HookProperty-HookTransaction-Disconnecting-Length>
       <Debugger-DebugTarget-ProcessorElementNumber>1</Debugger-DebugTarget-ProcessorElementNumber>
       <Debugger-DebugTarget-SubID>0</Debugger-DebugTarget-SubID>
+      <DebuggerProperty-EssentialProperty-EmulatorConnect-SerialNumber />
+      <DebuggerProperty-DownloadProperty-DebugInformation-SearchGlobalVariablesOutsideCurrentScope>False</DebuggerProperty-DownloadProperty-DebugInformation-SearchGlobalVariablesOutsideCurrentScope>
     </Instance>
   </Class>
   <Class Guid="100f3761-3d7e-4559-b1d8-375a0c7bf682">

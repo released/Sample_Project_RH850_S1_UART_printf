@@ -35,6 +35,15 @@ volatile unsigned char _sys_uTimerEventCount = 0;             /* Speed up interr
 
 /*_____ F U N C T I O N S __________________________________________________*/
 
+void read_64_words(unsigned long start_addr , unsigned long* buffer)
+{
+    unsigned long i = 0;
+    for (i = 0; i < 64; i++)
+    {
+        buffer[i] = PTR_UL_ADDR_RW(start_addr + i * 4U);
+    }
+}
+
 int compare_buffer(const void *src, const void *dest, size_t nBytes)
 {
     if (memcmp(src, dest, nBytes) == 0) {

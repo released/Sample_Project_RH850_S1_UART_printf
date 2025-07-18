@@ -147,7 +147,7 @@ struct flag_32bit
 
 //8 x 4 --> 32
 #ifndef MAKELONG
-#define MAKELONG(v1,v2,v3,v4)   					(unsigned int)((v1<<24)+(v2<<16)+(v3<<8)+v4)  			//v1,v2,v3,v4 is unsigned char
+#define MAKELONG(v1,v2,v3,v4)   					(unsigned long)((v1<<24)+(v2<<16)+(v3<<8)+v4)  			//v1,v2,v3,v4 is unsigned char
 #endif
 
 #ifndef SIZEOF
@@ -170,7 +170,21 @@ struct flag_32bit
 #define UNUSED(x) 									( (void)(x) )
 #endif
 
+#ifndef PTR_UL_ADDR_RW
+#define PTR_UL_ADDR_RW(x)       					(*((unsigned long*)(x)))
+#endif
+
+#ifndef PTR_USHORT_ADDR_RW
+#define PTR_USHORT_ADDR_RW(x)       				(*((unsigned short*)(x)))
+#endif
+
+#ifndef PTR_UCH_ADDR_RW
+#define PTR_UCH_ADDR_RW(x)      					(*((unsigned char*)(x)))
+#endif
+
 /*_____ F U N C T I O N S __________________________________________________*/
+
+void read_64_words(unsigned long start_addr , unsigned long* buffer);
 int compare_buffer(const void *src, const void *dest, size_t nBytes);
 void reset_buffer(void *dest, unsigned long val, unsigned long size);
 void copy_buffer(void *dest, void *src, unsigned long size);
