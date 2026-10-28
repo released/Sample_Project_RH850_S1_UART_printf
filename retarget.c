@@ -28,7 +28,9 @@
 // retarget printf
 int putchar(int c)
 {
-#if 1
+#if TINY_PRINTF_FULL
+    return SendChar((unsigned char)c);
+#elif 1
     // if (c == '\r')
     // {
     //     SendChar('\n');
@@ -46,6 +48,9 @@ int putchar(int c)
 #endif
 }
 
+#if TINY_PRINTF_FULL
+#include "retarget_full.inc"
+#else
 #if 1
 #include <stdarg.h>
 // #include <stdint.h>
@@ -1207,3 +1212,4 @@ int tiny_printf(const char *fmt, ...)
 }
 
 #endif
+#endif /* TINY_PRINTF_FULL */
