@@ -1,0 +1,6 @@
+{
+    "files.associations": {
+        "retarget.h": "c",
+        "custom_lib.h": "c"
+    }
+}

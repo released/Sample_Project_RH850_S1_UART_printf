@@ -481,7 +481,7 @@
       <GeneralOptionResetVectorAddressPE14-DefaultValue />
       <GeneralOptionResetVectorAddressPE15-DefaultValue />
       <IsLockedByUser>False</IsLockedByUser>
-      <TimeTagModified--0>-8584487639896052961</TimeTagModified--0>
+      <TimeTagModified--0>-8584469592174405551</TimeTagModified--0>
       <BuildMode-0>DefaultBuild</BuildMode-0>
       <Memo-0 />
       <SetAllBuildModeValue-0>False</SetAllBuildModeValue-0>
@@ -835,7 +835,7 @@ src\smc_gen\Config_OSTM0
       <LinkOptionLibraryLibMalloc-DefaultValue>False</LinkOptionLibraryLibMalloc-DefaultValue>
       <LinkOptionLibraryLibSetJmp-DefaultValue>False</LinkOptionLibraryLibSetJmp-DefaultValue>
       <IsLockedByUser>False</IsLockedByUser>
-      <TimeTagModified--0>-8584557014745119001</TimeTagModified--0>
+      <TimeTagModified--0>-8584469761927609128</TimeTagModified--0>
       <LinkOptionAllowOptimizeEntryBlock-0>False</LinkOptionAllowOptimizeEntryBlock-0>
       <LinkOptionCpu-0>False</LinkOptionCpu-0>
       <LinkOptionDebug-0>Debug</LinkOptionDebug-0>
@@ -1036,7 +1036,7 @@ src\smc_gen\Config_OSTM0
       <LibOptionLibraryLibSetJmp-DefaultValue>False</LibOptionLibraryLibSetJmp-DefaultValue>
       <LibOptionAllowDuplicateModuleName-DefaultValue>False</LibOptionAllowDuplicateModuleName-DefaultValue>
       <IsLockedByUser>False</IsLockedByUser>
-      <TimeTagModified--0>-8584557014745119001</TimeTagModified--0>
+      <TimeTagModified--0>-8584469761927609128</TimeTagModified--0>
       <LibOptionDebug-0>Debug</LibOptionDebug-0>
       <LibOptionForm-0>LibraryU</LibOptionForm-0>
       <LibOptionInput-0 />
@@ -1693,11 +1693,12 @@ src\smc_gen\Config_OSTM0
       <DebuggerProperty-DownloadProperty-DebugInformation-DownloadFiles-DownloadItem0-PidOffset>0</DebuggerProperty-DownloadProperty-DebugInformation-DownloadFiles-DownloadItem0-PidOffset>
       <DebuggerProperty-DownloadProperty-DebugInformation-DownloadFiles-DownloadItem0-GenerateInformationForInputCompletion>True</DebuggerProperty-DownloadProperty-DebugInformation-DownloadFiles-DownloadItem0-GenerateInformationForInputCompletion>
       <DebuggerProperty-DownloadProperty-DebugInformation-CpuReset>True</DebuggerProperty-DownloadProperty-DebugInformation-CpuReset>
-      <DebuggerProperty-DownloadProperty-DebugInformation-FlashErase>False</DebuggerProperty-DownloadProperty-DebugInformation-FlashErase>
+      <DebuggerProperty-DownloadProperty-DebugInformation-FlashErase>True</DebuggerProperty-DownloadProperty-DebugInformation-FlashErase>
       <DebuggerProperty-DownloadProperty-DebugInformation-EventCorrection>SuspendEvent</DebuggerProperty-DownloadProperty-DebugInformation-EventCorrection>
       <DebuggerProperty-DownloadProperty-DebugInformation-SkipStartup>True</DebuggerProperty-DownloadProperty-DebugInformation-SkipStartup>
       <DebuggerProperty-DownloadProperty-DebugInformation-MainSymbol>XwBtAGEAaQBuAA==</DebuggerProperty-DownloadProperty-DebugInformation-MainSymbol>
       <DebuggerProperty-DownloadProperty-DebugInformation-MaxLoaderMemorySize>500</DebuggerProperty-DownloadProperty-DebugInformation-MaxLoaderMemorySize>
+      <DebuggerProperty-DownloadProperty-DebugInformation-SearchGlobalVariablesOutsideCurrentScope>False</DebuggerProperty-DownloadProperty-DebugInformation-SearchGlobalVariablesOutsideCurrentScope>
       <DebuggerProperty-DownloadProperty-None-DefaultDownloadItemSupported>True</DebuggerProperty-DownloadProperty-None-DefaultDownloadItemSupported>
       <DebuggerProperty-OptionalProperty-Register-UpdateDisplayInExecutionForPC>No</DebuggerProperty-OptionalProperty-Register-UpdateDisplayInExecutionForPC>
       <DebuggerProperty-OptionalProperty-Register-UpdateIntervalForPC>500</DebuggerProperty-OptionalProperty-Register-UpdateIntervalForPC>
@@ -1745,7 +1746,6 @@ src\smc_gen\Config_OSTM0
       <Debugger-DebugTarget-ProcessorElementNumber>1</Debugger-DebugTarget-ProcessorElementNumber>
       <Debugger-DebugTarget-SubID>0</Debugger-DebugTarget-SubID>
       <DebuggerProperty-EssentialProperty-EmulatorConnect-SerialNumber />
-      <DebuggerProperty-DownloadProperty-DebugInformation-SearchGlobalVariablesOutsideCurrentScope>False</DebuggerProperty-DownloadProperty-DebugInformation-SearchGlobalVariablesOutsideCurrentScope>
     </Instance>
   </Class>
   <Class Guid="100f3761-3d7e-4559-b1d8-375a0c7bf682">
