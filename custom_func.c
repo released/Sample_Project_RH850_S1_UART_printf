@@ -296,9 +296,22 @@ void RLIN3_UART_SendChar(unsigned char c)
     // RLN30.LUTDR.UINT8[L] = (unsigned char) c;  
 }
 
-void SendChar(unsigned char ch)
+int SendChar(unsigned char ch)
 {
-    RLIN3_UART_SendChar(ch);
+    unsigned long guard;
+
+    /* Bound console waits so a busy UART cannot block foreground work. */
+    guard = 100000UL;
+    while ((RLN30.LST & _UART_TRANSMISSION_OPERATED) && guard)
+    {
+        guard--;
+    }
+    if (guard)
+    {
+        RLN30.LUTDR.UINT16 = ch;
+        return (int)ch;
+    }
+    return -1;
 }
 
 void hardware_init(void)
@@ -313,8 +326,8 @@ void hardware_init(void)
             - LED18 > P0_14
             - LED17 > P8_5 
         UART : 
-            - TX > P10_10
-            - RX > P10_9    
+            - TX > P0_2
+            - RX > P0_3    
     */
     R_Config_UART0_Receive((uint8_t *)&UART0Manager.g_uart0rxbuf, 1U);
     R_Config_UART0_Start();

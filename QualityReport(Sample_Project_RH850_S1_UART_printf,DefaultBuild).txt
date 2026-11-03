@@ -1,0 +1,355 @@
+QualityReport
+2026年11月3日 上午 10:02:11
+
+------ Start build(Sample_Project_RH850_S1_UART_printf, DefaultBuild) ------
+C:\Program Files (x86)\Renesas Electronics\CS+\CC\CC-RH\V2.07.00\Bin\ccrh.exe custom_func.c -oDefaultBuild\custom_func.obj -Xcpu=g3kh -g -g_line -Isrc\smc_gen\Config_UART0 -Isrc\smc_gen\r_pincfg -Isrc\smc_gen\general -Isrc\smc_gen\Config_TAUJ0_0 -Isrc\smc_gen\Config_PORT -Isrc\smc_gen\Config_OSTM0 -I. -lang=c99 -Xdbl_size=4 -c -MAKEUD=DefaultBuild -Xexec_time=C:\Users\averyc\AppData\Local\Temp\CSPlusBuildTool_3c1c68bb37fc4b2791c238e016c070b0f4kzbsma.q2u -Xmsg_lang=english
+C:\Program Files (x86)\Renesas Electronics\CS+\CC\CC-RH\V2.07.00\Bin\ccrh.exe src\smc_gen\Config_OSTM0\Config_OSTM0_user.c -oDefaultBuild\Config_OSTM0_user.obj -Xcpu=g3kh -g -g_line -Isrc\smc_gen\Config_UART0 -Isrc\smc_gen\r_pincfg -Isrc\smc_gen\general -Isrc\smc_gen\Config_TAUJ0_0 -Isrc\smc_gen\Config_PORT -Isrc\smc_gen\Config_OSTM0 -I. -lang=c99 -Xdbl_size=4 -c -MAKEUD=DefaultBuild -Xexec_time=C:\Users\averyc\AppData\Local\Temp\CSPlusBuildTool_275145df8cda444dab9f71e72aaebff7ppqls0sv.f5k -Xmsg_lang=english
+C:\Program Files (x86)\Renesas Electronics\CS+\CC\CC-RH\V2.07.00\Bin\ccrh.exe src\smc_gen\Config_PORT\Config_PORT_user.c -oDefaultBuild\Config_PORT_user.obj -Xcpu=g3kh -g -g_line -Isrc\smc_gen\Config_UART0 -Isrc\smc_gen\r_pincfg -Isrc\smc_gen\general -Isrc\smc_gen\Config_TAUJ0_0 -Isrc\smc_gen\Config_PORT -Isrc\smc_gen\Config_OSTM0 -I. -lang=c99 -Xdbl_size=4 -c -MAKEUD=DefaultBuild -Xexec_time=C:\Users\averyc\AppData\Local\Temp\CSPlusBuildTool_6f263055fb6b45e08d4a3f6f74f1629crg5p1jp0.tl3 -Xmsg_lang=english
+C:\Program Files (x86)\Renesas Electronics\CS+\CC\CC-RH\V2.07.00\Bin\ccrh.exe src\smc_gen\Config_OSTM0\Config_OSTM0.c -oDefaultBuild\Config_OSTM0.obj -Xcpu=g3kh -g -g_line -Isrc\smc_gen\Config_UART0 -Isrc\smc_gen\r_pincfg -Isrc\smc_gen\general -Isrc\smc_gen\Config_TAUJ0_0 -Isrc\smc_gen\Config_PORT -Isrc\smc_gen\Config_OSTM0 -I. -lang=c99 -Xdbl_size=4 -c -MAKEUD=DefaultBuild -Xexec_time=C:\Users\averyc\AppData\Local\Temp\CSPlusBuildTool_15fa5fd1c219430e8b4d7f2e8fca3687ar3eukdw.ew4 -Xmsg_lang=english
+C:\Program Files (x86)\Renesas Electronics\CS+\CC\CC-RH\V2.07.00\Bin\ccrh.exe src\smc_gen\Config_TAUJ0_0\Config_TAUJ0_0_user.c -oDefaultBuild\Config_TAUJ0_0_user.obj -Xcpu=g3kh -g -g_line -Isrc\smc_gen\Config_UART0 -Isrc\smc_gen\r_pincfg -Isrc\smc_gen\general -Isrc\smc_gen\Config_TAUJ0_0 -Isrc\smc_gen\Config_PORT -Isrc\smc_gen\Config_OSTM0 -I. -lang=c99 -Xdbl_size=4 -c -MAKEUD=DefaultBuild -Xexec_time=C:\Users\averyc\AppData\Local\Temp\CSPlusBuildTool_c54fa3a3063f41279afdcf9aedf13410uy5agknu.ulb -Xmsg_lang=english
+C:\Program Files (x86)\Renesas Electronics\CS+\CC\CC-RH\V2.07.00\Bin\ccrh.exe src\smc_gen\general\r_cg_cgc_user.c -oDefaultBuild\r_cg_cgc_user.obj -Xcpu=g3kh -g -g_line -Isrc\smc_gen\Config_UART0 -Isrc\smc_gen\r_pincfg -Isrc\smc_gen\general -Isrc\smc_gen\Config_TAUJ0_0 -Isrc\smc_gen\Config_PORT -Isrc\smc_gen\Config_OSTM0 -I. -lang=c99 -Xdbl_size=4 -c -MAKEUD=DefaultBuild -Xexec_time=C:\Users\averyc\AppData\Local\Temp\CSPlusBuildTool_c0b8c134f0a94eafb211a3bef5f5e986wzjk1az5.1xy -Xmsg_lang=english
+C:\Program Files (x86)\Renesas Electronics\CS+\CC\CC-RH\V2.07.00\Bin\ccrh.exe src\smc_gen\general\r_cg_main.c -oDefaultBuild\r_cg_main.obj -Xcpu=g3kh -g -g_line -Isrc\smc_gen\Config_UART0 -Isrc\smc_gen\r_pincfg -Isrc\smc_gen\general -Isrc\smc_gen\Config_TAUJ0_0 -Isrc\smc_gen\Config_PORT -Isrc\smc_gen\Config_OSTM0 -I. -lang=c99 -Xdbl_size=4 -c -MAKEUD=DefaultBuild -Xexec_time=C:\Users\averyc\AppData\Local\Temp\CSPlusBuildTool_70dffb63ac6b40e2bad23d2bb782f419gjjxczby.h1f -Xmsg_lang=english
+C:\Program Files (x86)\Renesas Electronics\CS+\CC\CC-RH\V2.07.00\Bin\ccrh.exe src\smc_gen\general\r_smc_interrupt.c -oDefaultBuild\r_smc_interrupt.obj -Xcpu=g3kh -g -g_line -Isrc\smc_gen\Config_UART0 -Isrc\smc_gen\r_pincfg -Isrc\smc_gen\general -Isrc\smc_gen\Config_TAUJ0_0 -Isrc\smc_gen\Config_PORT -Isrc\smc_gen\Config_OSTM0 -I. -lang=c99 -Xdbl_size=4 -c -MAKEUD=DefaultBuild -Xexec_time=C:\Users\averyc\AppData\Local\Temp\CSPlusBuildTool_9744de7312cd40108093145b207d942e4rjvnpjv.c4u -Xmsg_lang=english
+C:\Program Files (x86)\Renesas Electronics\CS+\CC\CC-RH\V2.07.00\Bin\ccrh.exe src\smc_gen\Config_PORT\Config_PORT.c -oDefaultBuild\Config_PORT.obj -Xcpu=g3kh -g -g_line -Isrc\smc_gen\Config_UART0 -Isrc\smc_gen\r_pincfg -Isrc\smc_gen\general -Isrc\smc_gen\Config_TAUJ0_0 -Isrc\smc_gen\Config_PORT -Isrc\smc_gen\Config_OSTM0 -I. -lang=c99 -Xdbl_size=4 -c -MAKEUD=DefaultBuild -Xexec_time=C:\Users\averyc\AppData\Local\Temp\CSPlusBuildTool_552e3f20e0bd4f4b8fc755589edd274fah0ixm4k.hvr -Xmsg_lang=english
+C:\Program Files (x86)\Renesas Electronics\CS+\CC\CC-RH\V2.07.00\Bin\ccrh.exe src\smc_gen\general\r_cg_intvector.c -oDefaultBuild\r_cg_intvector.obj -Xcpu=g3kh -g -g_line -Isrc\smc_gen\Config_UART0 -Isrc\smc_gen\r_pincfg -Isrc\smc_gen\general -Isrc\smc_gen\Config_TAUJ0_0 -Isrc\smc_gen\Config_PORT -Isrc\smc_gen\Config_OSTM0 -I. -lang=c99 -Xdbl_size=4 -c -MAKEUD=DefaultBuild -Xexec_time=C:\Users\averyc\AppData\Local\Temp\CSPlusBuildTool_0f295ddc31b842fc97fae56b693586055hcf2q40.1i5 -Xmsg_lang=english
+C:\Program Files (x86)\Renesas Electronics\CS+\CC\CC-RH\V2.07.00\Bin\ccrh.exe src\smc_gen\Config_TAUJ0_0\Config_TAUJ0_0.c -oDefaultBuild\Config_TAUJ0_0.obj -Xcpu=g3kh -g -g_line -Isrc\smc_gen\Config_UART0 -Isrc\smc_gen\r_pincfg -Isrc\smc_gen\general -Isrc\smc_gen\Config_TAUJ0_0 -Isrc\smc_gen\Config_PORT -Isrc\smc_gen\Config_OSTM0 -I. -lang=c99 -Xdbl_size=4 -c -MAKEUD=DefaultBuild -Xexec_time=C:\Users\averyc\AppData\Local\Temp\CSPlusBuildTool_af6c193a995d4a1ebdc8653dce1b9d71cja2gist.y0y -Xmsg_lang=english
+C:\Program Files (x86)\Renesas Electronics\CS+\CC\CC-RH\V2.07.00\Bin\ccrh.exe src\smc_gen\general\r_cg_systeminit.c -oDefaultBuild\r_cg_systeminit.obj -Xcpu=g3kh -g -g_line -Isrc\smc_gen\Config_UART0 -Isrc\smc_gen\r_pincfg -Isrc\smc_gen\general -Isrc\smc_gen\Config_TAUJ0_0 -Isrc\smc_gen\Config_PORT -Isrc\smc_gen\Config_OSTM0 -I. -lang=c99 -Xdbl_size=4 -c -MAKEUD=DefaultBuild -Xexec_time=C:\Users\averyc\AppData\Local\Temp\CSPlusBuildTool_d6e9c0332ccb4b46824a82eec3db363emp5dabvc.vqy -Xmsg_lang=english
+C:\Program Files (x86)\Renesas Electronics\CS+\CC\CC-RH\V2.07.00\Bin\ccrh.exe src\smc_gen\general\r_cg_cgc.c -oDefaultBuild\r_cg_cgc.obj -Xcpu=g3kh -g -g_line -Isrc\smc_gen\Config_UART0 -Isrc\smc_gen\r_pincfg -Isrc\smc_gen\general -Isrc\smc_gen\Config_TAUJ0_0 -Isrc\smc_gen\Config_PORT -Isrc\smc_gen\Config_OSTM0 -I. -lang=c99 -Xdbl_size=4 -c -MAKEUD=DefaultBuild -Xexec_time=C:\Users\averyc\AppData\Local\Temp\CSPlusBuildTool_9411f73d1ee04c57982e4902aa3951caqkcksc0s.z4l -Xmsg_lang=english
+C:\Program Files (x86)\Renesas Electronics\CS+\CC\CC-RH\V2.07.00\Bin\ccrh.exe src\smc_gen\general\r_smc_intprg.c -oDefaultBuild\r_smc_intprg.obj -Xcpu=g3kh -g -g_line -Isrc\smc_gen\Config_UART0 -Isrc\smc_gen\r_pincfg -Isrc\smc_gen\general -Isrc\smc_gen\Config_TAUJ0_0 -Isrc\smc_gen\Config_PORT -Isrc\smc_gen\Config_OSTM0 -I. -lang=c99 -Xdbl_size=4 -c -MAKEUD=DefaultBuild -Xexec_time=C:\Users\averyc\AppData\Local\Temp\CSPlusBuildTool_c809f028ce3c4489afd605cc0019c83dklcamq1b.blt -Xmsg_lang=english
+C:\Program Files (x86)\Renesas Electronics\CS+\CC\CC-RH\V2.07.00\Bin\ccrh.exe src\smc_gen\r_pincfg\Pin.c -oDefaultBuild\Pin.obj -Xcpu=g3kh -g -g_line -Isrc\smc_gen\Config_UART0 -Isrc\smc_gen\r_pincfg -Isrc\smc_gen\general -Isrc\smc_gen\Config_TAUJ0_0 -Isrc\smc_gen\Config_PORT -Isrc\smc_gen\Config_OSTM0 -I. -lang=c99 -Xdbl_size=4 -c -MAKEUD=DefaultBuild -Xexec_time=C:\Users\averyc\AppData\Local\Temp\CSPlusBuildTool_1184fadb61b14cd7be2707ffdb2b393bw3vzo2yq.hcy -Xmsg_lang=english
+C:\Program Files (x86)\Renesas Electronics\CS+\CC\CC-RH\V2.07.00\Bin\ccrh.exe src\smc_gen\Config_UART0\Config_UART0_user.c -oDefaultBuild\Config_UART0_user.obj -Xcpu=g3kh -g -g_line -Isrc\smc_gen\Config_UART0 -Isrc\smc_gen\r_pincfg -Isrc\smc_gen\general -Isrc\smc_gen\Config_TAUJ0_0 -Isrc\smc_gen\Config_PORT -Isrc\smc_gen\Config_OSTM0 -I. -lang=c99 -Xdbl_size=4 -c -MAKEUD=DefaultBuild -Xexec_time=C:\Users\averyc\AppData\Local\Temp\CSPlusBuildTool_49d11decaaf74463b479a07fa11ca59edy0wdaoq.xjp -Xmsg_lang=english
+C:\Program Files (x86)\Renesas Electronics\CS+\CC\CC-RH\V2.07.00\Bin\ccrh.exe src\smc_gen\Config_UART0\Config_UART0.c -oDefaultBuild\Config_UART0.obj -Xcpu=g3kh -g -g_line -Isrc\smc_gen\Config_UART0 -Isrc\smc_gen\r_pincfg -Isrc\smc_gen\general -Isrc\smc_gen\Config_TAUJ0_0 -Isrc\smc_gen\Config_PORT -Isrc\smc_gen\Config_OSTM0 -I. -lang=c99 -Xdbl_size=4 -c -MAKEUD=DefaultBuild -Xexec_time=C:\Users\averyc\AppData\Local\Temp\CSPlusBuildTool_b7fbfcfc15c8450280ec566876bc0e4e5zxknkze.qgc -Xmsg_lang=english
+C:\Program Files (x86)\Renesas Electronics\CS+\CC\CC-RH\V2.07.00\Bin\rlink.exe -MAKEUD=DefaultBuild\Sample_Project_RH850_S1_UART_printf.lk.ud -subcommand=DefaultBuild\Sample_Project_RH850_S1_UART_printf.clnk
+W0561017:Paid license of CC-RH V2 is not found, and the evaluation period has expired. Please consider purchasing the product.
+RAMDATA SECTION:  00000231 Byte(s)
+ROMDATA SECTION:  00000783 Byte(s)
+PROGRAM SECTION:  000111b8 Byte(s)
+W0561017:Paid license of CC-RH V2 is not found, and the evaluation period has expired. Please consider purchasing the product.
+Renesas Optimizing Linker Completed
+------ Build ended(Error:0, Warning:2)(Sample_Project_RH850_S1_UART_printf, DefaultBuild) ------
+C:\Program Files (x86)\Renesas Electronics\CS+\CC\CC-RH\V2.07.00\Bin\ccrh.exe custom_func.c -oDefaultBuild\custom_func.obj -Xcpu=g3kh -g -g_line -Isrc\smc_gen\Config_UART0 -Isrc\smc_gen\r_pincfg -Isrc\smc_gen\general -Isrc\smc_gen\Config_TAUJ0_0 -Isrc\smc_gen\Config_PORT -Isrc\smc_gen\Config_OSTM0 -I. -lang=c99 -Xdbl_size=4 -c -MAKEUD=DefaultBuild -Xexec_time=C:\Users\averyc\AppData\Local\Temp\CSPlusBuildTool_23ce5d6b2beb40359d8bd12c495130c8wzxpa555.vsy -Xmsg_lang=english
+C:\Program Files (x86)\Renesas Electronics\CS+\CC\CC-RH\V2.07.00\Bin\rlink.exe -MAKEUD=DefaultBuild\Sample_Project_RH850_S1_UART_printf.lk.ud -subcommand=DefaultBuild\Sample_Project_RH850_S1_UART_printf.clnk
+W0561017:Paid license of CC-RH V2 is not found, and the evaluation period has expired. Please consider purchasing the product.
+RAMDATA SECTION:  00000231 Byte(s)
+ROMDATA SECTION:  00000783 Byte(s)
+PROGRAM SECTION:  000111b8 Byte(s)
+W0561017:Paid license of CC-RH V2 is not found, and the evaluation period has expired. Please consider purchasing the product.
+Renesas Optimizing Linker Completed
+
+--- CommandFile 1 ---
+DefaultBuild\Sample_Project_RH850_S1_UART_printf.clnk :
+-input=DefaultBuild\boot.obj
+-input=DefaultBuild\cstart.obj
+-input=DefaultBuild\Config_OSTM0.obj
+-input=DefaultBuild\Config_OSTM0_user.obj
+-input=DefaultBuild\Config_PORT.obj
+-input=DefaultBuild\Config_PORT_user.obj
+-input=DefaultBuild\Config_TAUJ0_0.obj
+-input=DefaultBuild\Config_TAUJ0_0_user.obj
+-input=DefaultBuild\r_cg_cgc.obj
+-input=DefaultBuild\r_cg_cgc_user.obj
+-input=DefaultBuild\r_cg_intvector.obj
+-input=DefaultBuild\r_cg_main.obj
+-input=DefaultBuild\r_cg_systeminit.obj
+-input=DefaultBuild\r_smc_interrupt.obj
+-input=DefaultBuild\r_smc_intprg.obj
+-input=DefaultBuild\Pin.obj
+-input=DefaultBuild\custom_func.obj
+-input=DefaultBuild\misc_config.obj
+-input=DefaultBuild\Config_UART0.obj
+-input=DefaultBuild\Config_UART0_user.obj
+-input=DefaultBuild\retarget.obj
+-debug
+-nocompress
+-NOOPtimize
+-output=DefaultBuild\Sample_Project_RH850_S1_UART_printf.abs
+-library=v850e3v5\rhf4n.lib
+-library=v850e3v5\libmalloc.lib
+-list=DefaultBuild\Sample_Project_RH850_S1_UART_printf.map
+-show=reference,xreference,total_size
+-start=RESET/0,EIINTTBL.const/00000200,.const,.INIT_DSEC.const,.INIT_BSEC.const,.text,.data,privateData.const,privateData.data/00008000,.data.R,.bss,.stack.bss,privateData.bss/FEDE8000
+-rom=.data=.data.R
+-total_size
+-nologo
+-end
+-input=DefaultBuild\Sample_Project_RH850_S1_UART_printf.abs
+-output=DefaultBuild\Sample_Project_RH850_S1_UART_printf.mot
+-form=stype
+-exit
+
+--- CommandFile 2 ---
+DefaultBuild\Sample_Project_RH850_S1_UART_printf.clnk :
+-input=DefaultBuild\boot.obj
+-input=DefaultBuild\cstart.obj
+-input=DefaultBuild\Config_OSTM0.obj
+-input=DefaultBuild\Config_OSTM0_user.obj
+-input=DefaultBuild\Config_PORT.obj
+-input=DefaultBuild\Config_PORT_user.obj
+-input=DefaultBuild\Config_TAUJ0_0.obj
+-input=DefaultBuild\Config_TAUJ0_0_user.obj
+-input=DefaultBuild\r_cg_cgc.obj
+-input=DefaultBuild\r_cg_cgc_user.obj
+-input=DefaultBuild\r_cg_intvector.obj
+-input=DefaultBuild\r_cg_main.obj
+-input=DefaultBuild\r_cg_systeminit.obj
+-input=DefaultBuild\r_smc_interrupt.obj
+-input=DefaultBuild\r_smc_intprg.obj
+-input=DefaultBuild\Pin.obj
+-input=DefaultBuild\custom_func.obj
+-input=DefaultBuild\misc_config.obj
+-input=DefaultBuild\Config_UART0.obj
+-input=DefaultBuild\Config_UART0_user.obj
+-input=DefaultBuild\retarget.obj
+-debug
+-nocompress
+-NOOPtimize
+-output=DefaultBuild\Sample_Project_RH850_S1_UART_printf.abs
+-library=v850e3v5\rhf4n.lib
+-library=v850e3v5\libmalloc.lib
+-list=DefaultBuild\Sample_Project_RH850_S1_UART_printf.map
+-show=reference,xreference,total_size
+-start=RESET/0,EIINTTBL.const/00000200,.const,.INIT_DSEC.const,.INIT_BSEC.const,.text,.data,privateData.const,privateData.data/00008000,.data.R,.bss,.stack.bss,privateData.bss/FEDE8000
+-rom=.data=.data.R
+-total_size
+-nologo
+-end
+-input=DefaultBuild\Sample_Project_RH850_S1_UART_printf.abs
+-output=DefaultBuild\Sample_Project_RH850_S1_UART_printf.mot
+-form=stype
+-exit
+
+
+--- SHA1 hash value of output files ---
+D:\SourceCode\_Avery_Renesas\CS+\Sample_Project_RH850_S1_UART_printf\DefaultBuild\Sample_Project_RH850_S1_UART_printf.abs: fa12c2562962f75c8f396b52e20f62e2d4d179b8
+D:\SourceCode\_Avery_Renesas\CS+\Sample_Project_RH850_S1_UART_printf\DefaultBuild\Sample_Project_RH850_S1_UART_printf.mot: 930e1d19f620470eba5271fefaeaec7fefef1d90
+
+
+--- System Information ---
+*OS Version
+ Microsoft Windows 11 專業版 (-, 10.0.26200, WOW64)
+*Language
+ 中文(台灣)
+*.NET Framework Version
+ Microsoft .NET Framework 4 [.NET 4.8 or later] (533509)
+*WebView2 Version
+ 156.0.4314.58
+
+--- Application Information ---
+*Product Name
+ CS+ for CC
+*Package Version
+ V8.14.00  [02 Jun 2025]
+*Version
+ V9.14.00.04 [25 Apr 2025]
+*Assembly Version
+ 3.12.10.1
+*Sales Area
+ Japan
+*Product License
+ 
+*Execution Place
+ C:\Program Files (x86)\Renesas Electronics\CS+\CC
+*Memory Usage
+ *Private Working Set
+  364 MB
+ *Number of GDI Objects
+  2328
+ *Number of USER Objects
+  1209
+ *Opened Files
+  10 editors, 10 files, 204 KB
+
+--- Build Tool Plug-in Information ---
+RH850 Build tool CC-RH Plug-in
+ *Version
+  V8.14.00.01 [10 Apr 2025]
+ *Assembly Version
+  1.1.10.12
+ *DLL File Name
+  BuildToolCCRH.dll
+RL78 Build tool CC-RL Plug-in
+ *Version
+  V8.14.00.01 [10 Apr 2025]
+ *Assembly Version
+  1.0.0.0
+ *DLL File Name
+  BuildToolCCRL.dll
+RX Build tool CC-RX Plug-in
+ *Version
+  V8.14.00.01 [10 Apr 2025]
+ *Assembly Version
+  3.12.10.1
+ *DLL File Name
+  BuildToolCCRX.dll
+RH850 Build tool GHS CCRH850 Plug-in
+ *Version
+  V1.11.00.01 [18 Apr 2025]
+ *Assembly Version
+  1.0.0.0
+ *DLL File Name
+  BuildToolGHSCCRH850.dll
+
+--- Debug Tool Plug-in Information ---
+Debugger Collection Plug-in
+ *Version
+  V8.14.00.02 [08 May 2025]
+ *Assembly Version
+  2.12.10.1
+ *DLL File Name
+  DebugToolCollection.dll
+
+--- Other Plug-in Information ---
+Code Generator Plug-in for RH850
+ *Version
+  V1.02.02.05 [25 May 2018]
+ *Assembly Version
+  1.0.0.0
+ *DLL File Name
+  CodeGeneratorRH850.dll
+Code Generator Plug-in
+ *Version
+  V4.08.06.01 [28 Oct 2022]
+ *Assembly Version
+  3.0.0.0
+ *DLL File Name
+  CodePart.dll
+Code Generator/PinView Plug-in
+ *Version
+  V2.10.07.02 [08 Nov 2021]
+ *Assembly Version
+  1.0.0.0
+ *DLL File Name
+  CodePart2.dll
+Debug Console Plug-in
+ *Version
+  V8.09.00.03 [24 Nov 2022]
+ *Assembly Version
+  8.9.0.0
+ *DLL File Name
+  DebugConsole.dll
+Quick and Effective tool solution - QE
+ *Version
+  V9.14.00.02 [08 Apr 2025]
+ *Assembly Version
+  1.15.10.16
+ *DLL File Name
+  InCarTools.dll
+Pin Configurator Plug-in
+ *Version
+  V1.54.01.01 [31 Jul 2014]
+ *Assembly Version
+  1.6.10.23
+ *DLL File Name
+  PinConfig.dll
+Program Analyzer Plug-in
+ *Version
+  V4.13.00.03 [24 May 2023]
+ *Assembly Version
+  3.12.11.9
+ *DLL File Name
+  ProgramAnalyzer.dll
+IronPython Console Plug-in
+ *Version
+  V1.49.00.02 [08 Nov 2024]
+ *Assembly Version
+  1.6.10.23
+ *DLL File Name
+  PythonConsole.dll
+Editor plug-in DLL
+ *Version
+  V1.21.00.01 [09 Apr 2025]
+ *Assembly Version
+  1.1.0.0
+ *DLL File Name
+  SEditor.dll
+Smart Configurator for RH850 Communication Plug-in
+ *Version
+  V1.02.11.01 [08 May 2025]
+ *Assembly Version
+  1.0.0.0
+ *DLL File Name
+  SmcCodePartRH850.dll
+Smart Configurator for RL78 Communication Plug-in
+ *Version
+  V1.00.11.01 [25 Nov 2024]
+ *Assembly Version
+  1.0.0.0
+ *DLL File Name
+  SmcCodePartRL78.dll
+Stack Usage Tracer
+ *Version
+  V1.05.00.02 [30 Jul 2014]
+ *Assembly Version
+  1.30.11.15
+ *DLL File Name
+  Stk.dll
+Update Manager Plug-in
+ *Version
+  V2.05.00.04 [30 May 2025]
+ *Assembly Version
+  1.25.4.17
+ *DLL File Name
+  Update.dll
+
+Debug Tool Common Interface
+ *Version
+  V8.14.00.02 [08 May 2025]
+ *Assembly Version
+  3.12.10.1
+ *DLL File Name
+  CommonDebuggerInterface.dll
+Device Information Common Interface
+ *Version
+  V9.14.00.02 [08 Apr 2025]
+ *Assembly Version
+  3.0.0.0
+ *DLL File Name
+  DeviceInformation.dll
+
+--- Main Project Information ---
+D:\SourceCode\_Avery_Renesas\CS+\Sample_Project_RH850_S1_UART_printf\Sample_Project_RH850_S1_UART_printf.mtpj
+Microcontroller Information
+ *R7F701684
+  *File Name: Version
+   RH850_Productlist.xml: V8.140000
+   R7F701684_common.xml: V1.40.00.XX.XX
+   DR7F701684.DVF: V1.40
+   -: -
+   -: -
+  
+
+Build Tool Information
+ *CC-RH
+   * Version of plug-in(*.dll)
+     V8.14.00.02 [10 Apr 2025]
+   * The Version of the Compiler Package
+     V2.07.00
+  
+
+Debug Tool Information
+ *RH850 E1(LPD)
+  Debugger Library V8.14.00.02 [08 May 2025]
+  RH850G3 Executor V4.11.00.01
+  E1/E20/E2 RH850  F/W V.1.00.00.000
+  Control Board V.1.13.00.007 Rev.0002 FPGA Version V03.00
+  
+
+Other Tool Information
+ *None
+
+ *None
+
+ *None
+
+ *None
+
+ *Program Analyzer
+  *Version
+   V4.13.00.03 [24 May 2023]
+
+ *Smart Configurator
+ *None
+
+ *None
+
+

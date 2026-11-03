@@ -7,7 +7,7 @@ update @ 2025/04/29
 
 - TAUJ0_0 : timer interval for 1ms interrupt
 
-- UART : RLIN3 (TX > P10_10 , RX > P10_9) , for printf and receive from keyboard
+- UART : RLIN3 (TX > P0_2 , RX > P0_3) , for printf and receive from keyboard
 
 - LED : LED18 > P0_14 , LED17 > P8_5 , toggle per 1000ms
  

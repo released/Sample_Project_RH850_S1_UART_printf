@@ -1,9 +1,9 @@
-﻿<CubeSuiteProject PackageVersion="V8.13.00  [05 Dec 2024]">
-  <ProductVersion>9.13.00.00</ProductVersion>
+﻿<CubeSuiteProject PackageVersion="V8.14.00  [02 Jun 2025]">
+  <ProductVersion>9.14.00.00</ProductVersion>
   <Class Guid="68f4a651-b9cd-473b-a595-b00447132ffa">
     <Instance Guid="00000000-0000-0000-0000-000000000000">
       <FormatVersion>2.0</FormatVersion>
-      <FileVersion>9.13</FileVersion>
+      <FileVersion>9.14</FileVersion>
       <ProjectGuid>6aaa356a-3dc6-4897-a319-9f0b7797fcf6</ProjectGuid>
       <ProjectItemGuid>72e07859-08b3-42fc-9108-4dd620e758c1</ProjectItemGuid>
       <FileCategoryGuid>4750b19e-6567-4899-94db-8f6cffb395d2</FileCategoryGuid>
@@ -55,6 +55,27 @@
       <Type>File</Type>
       <RelativePath>retarget.c</RelativePath>
       <TreeImageGuid>941832c1-fc3b-4e1b-94e8-01ea17128b42</TreeImageGuid>
+      <ParentItem>4750b19e-6567-4899-94db-8f6cffb395d2</ParentItem>
+    </Instance>
+    <Instance Guid="66c237a6-11d8-44fc-8c51-79eb05180404">
+      <Name>retarget.h</Name>
+      <Type>File</Type>
+      <RelativePath>retarget.h</RelativePath>
+      <TreeImageGuid>03cad1e8-2eb3-4cde-a8a3-982423631122</TreeImageGuid>
+      <ParentItem>4750b19e-6567-4899-94db-8f6cffb395d2</ParentItem>
+    </Instance>
+    <Instance Guid="55d1366a-cbe7-42e9-9ff1-2916a17f21c5">
+      <Name>retarget_config.h</Name>
+      <Type>File</Type>
+      <RelativePath>retarget_config.h</RelativePath>
+      <TreeImageGuid>03cad1e8-2eb3-4cde-a8a3-982423631122</TreeImageGuid>
+      <ParentItem>4750b19e-6567-4899-94db-8f6cffb395d2</ParentItem>
+    </Instance>
+    <Instance Guid="87d8cf73-6c57-48cd-9ae1-626ba5cc9e88">
+      <Name>retarget_full.inc</Name>
+      <Type>File</Type>
+      <RelativePath>retarget_full.inc</RelativePath>
+      <TreeImageGuid>b4d23a67-9c5b-4928-b8d4-059c57eafca1</TreeImageGuid>
       <ParentItem>4750b19e-6567-4899-94db-8f6cffb395d2</ParentItem>
     </Instance>
     <Instance Guid="3f46dfdb-4752-46ca-9cf6-e3b85f2eea32">
@@ -1257,6 +1278,18 @@ src\smc_gen\Config_OSTM0
       <ItemAddTime>638814596801753133</ItemAddTime>
       <ItemAddTimeCount>0</ItemAddTimeCount>
     </Instance>
+    <Instance Guid="66c237a6-11d8-44fc-8c51-79eb05180404">
+      <ItemAddTime>639292963929648481</ItemAddTime>
+      <ItemAddTimeCount>0</ItemAddTimeCount>
+    </Instance>
+    <Instance Guid="55d1366a-cbe7-42e9-9ff1-2916a17f21c5">
+      <ItemAddTime>639292963929648481</ItemAddTime>
+      <ItemAddTimeCount>1</ItemAddTimeCount>
+    </Instance>
+    <Instance Guid="87d8cf73-6c57-48cd-9ae1-626ba5cc9e88">
+      <ItemAddTime>639292963929648481</ItemAddTime>
+      <ItemAddTimeCount>2</ItemAddTimeCount>
+    </Instance>
     <Instance Guid="149baf2a-1b8c-4f78-9702-3ac495e87f5a">
       <TimeTagModified-SourceItem0--0>-8584742581494456148</TimeTagModified-SourceItem0--0>
       <SourceItem0-IsLockedByUser>False</SourceItem0-IsLockedByUser>
@@ -1745,7 +1778,6 @@ src\smc_gen\Config_OSTM0
       <DebuggerProperty-HookProperty-HookTransaction-Disconnecting-Length>0</DebuggerProperty-HookProperty-HookTransaction-Disconnecting-Length>
       <Debugger-DebugTarget-ProcessorElementNumber>1</Debugger-DebugTarget-ProcessorElementNumber>
       <Debugger-DebugTarget-SubID>0</Debugger-DebugTarget-SubID>
-      <DebuggerProperty-EssentialProperty-EmulatorConnect-SerialNumber />
     </Instance>
   </Class>
   <Class Guid="100f3761-3d7e-4559-b1d8-375a0c7bf682">

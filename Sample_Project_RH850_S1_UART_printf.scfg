@@ -234,9 +234,9 @@
         <Item generateEntity="true" generateFunction="false" id="CSIH0_INTCSIH0IJC" interruptHandlerFlag="false" interruptHandlerName="eiint32" oSManagementInterrupt="false" priority="15"/>
         <Item generateEntity="true" generateFunction="false" id="ADCA0_INTADCA0I2_2" interruptHandlerFlag="false" interruptHandlerName="eiint32" oSManagementInterrupt="false" priority="15"/>
         <Item generateEntity="true" generateFunction="false" id="RLIN30_INTRLIN30" interruptHandlerFlag="false" interruptHandlerName="eiint33" oSManagementInterrupt="false" priority="15"/>
-        <Item generateEntity="true" generateFunction="false" id="RLIN30_INTRLIN30UR0" interruptHandlerFlag="false" interruptHandlerName="r_Config_UART0_interrupt_send" oSManagementInterrupt="false" priority="15"/>
-        <Item generateEntity="true" generateFunction="false" id="RLIN30_INTRLIN30UR1" interruptHandlerFlag="false" interruptHandlerName="r_Config_UART0_interrupt_receive" oSManagementInterrupt="false" priority="15"/>
-        <Item generateEntity="true" generateFunction="false" id="RLIN30_INTRLIN30UR2" interruptHandlerFlag="false" interruptHandlerName="r_Config_UART0_interrupt_error" oSManagementInterrupt="false" priority="15"/>
+        <Item generateEntity="true" generateFunction="false" id="RLIN30_INTRLIN30UR0" interruptHandlerFlag="true" interruptHandlerName="r_Config_UART0_interrupt_send" oSManagementInterrupt="false" priority="15"/>
+        <Item generateEntity="true" generateFunction="false" id="RLIN30_INTRLIN30UR1" interruptHandlerFlag="true" interruptHandlerName="r_Config_UART0_interrupt_receive" oSManagementInterrupt="false" priority="15"/>
+        <Item generateEntity="true" generateFunction="false" id="RLIN30_INTRLIN30UR2" interruptHandlerFlag="true" interruptHandlerName="r_Config_UART0_interrupt_error" oSManagementInterrupt="false" priority="15"/>
         <Item generateEntity="true" generateFunction="false" id="Port_INTP0" interruptHandlerFlag="false" interruptHandlerName="eiint37" oSManagementInterrupt="false" priority="15"/>
         <Item generateEntity="true" generateFunction="false" id="Port_INTP1" interruptHandlerFlag="false" interruptHandlerName="eiint38" oSManagementInterrupt="false" priority="15"/>
         <Item generateEntity="true" generateFunction="false" id="Port_INTP2" interruptHandlerFlag="false" interruptHandlerName="eiint39" oSManagementInterrupt="false" priority="15"/>
@@ -279,11 +279,11 @@
         <Item generateEntity="true" generateFunction="false" id="RIIC0_INTRIIC0EE" interruptHandlerFlag="false" interruptHandlerName="eiint77" oSManagementInterrupt="false" priority="15"/>
         <Item generateEntity="true" generateFunction="false" id="RIIC0_INTRIIC0RI" interruptHandlerFlag="false" interruptHandlerName="eiint78" oSManagementInterrupt="false" priority="15"/>
         <Item generateEntity="true" generateFunction="false" id="RIIC0_INTRIIC0TEI" interruptHandlerFlag="false" interruptHandlerName="eiint79" oSManagementInterrupt="false" priority="15"/>
-        <Item generateEntity="true" generateFunction="false" id="TAUJ0_INTTAUJ0I0" interruptHandlerFlag="false" interruptHandlerName="r_Config_TAUJ0_0_interrupt" oSManagementInterrupt="false" priority="15"/>
+        <Item generateEntity="true" generateFunction="false" id="TAUJ0_INTTAUJ0I0" interruptHandlerFlag="true" interruptHandlerName="r_Config_TAUJ0_0_interrupt" oSManagementInterrupt="false" priority="15"/>
         <Item generateEntity="true" generateFunction="false" id="TAUJ0_INTTAUJ0I1" interruptHandlerFlag="false" interruptHandlerName="eiint81" oSManagementInterrupt="false" priority="15"/>
         <Item generateEntity="true" generateFunction="false" id="TAUJ0_INTTAUJ0I2" interruptHandlerFlag="false" interruptHandlerName="eiint82" oSManagementInterrupt="false" priority="15"/>
         <Item generateEntity="true" generateFunction="false" id="TAUJ0_INTTAUJ0I3" interruptHandlerFlag="false" interruptHandlerName="eiint83" oSManagementInterrupt="false" priority="15"/>
-        <Item generateEntity="true" generateFunction="false" id="OSTM0_INTOSTM0" interruptHandlerFlag="false" interruptHandlerName="r_Config_OSTM0_interrupt" oSManagementInterrupt="false" priority="15"/>
+        <Item generateEntity="true" generateFunction="false" id="OSTM0_INTOSTM0" interruptHandlerFlag="true" interruptHandlerName="r_Config_OSTM0_interrupt" oSManagementInterrupt="false" priority="15"/>
         <Item generateEntity="true" generateFunction="false" id="ENCA0_INTENCA0IOV" interruptHandlerFlag="false" interruptHandlerName="eiint85" oSManagementInterrupt="false" priority="15"/>
         <Item generateEntity="true" generateFunction="false" id="ENCA0_INTENCA0IUD" interruptHandlerFlag="false" interruptHandlerName="eiint86" oSManagementInterrupt="false" priority="15"/>
         <Item generateEntity="true" generateFunction="false" id="ENCA0_INTENCA0I0" interruptHandlerFlag="false" interruptHandlerName="eiint87" oSManagementInterrupt="false" priority="15"/>
@@ -396,9 +396,9 @@
         <Item generateEntity="true" generateFunction="false" id="LPS0_INTAPE" interruptHandlerFlag="false" interruptHandlerName="eiint357" oSManagementInterrupt="false" priority="15"/>
     </tool>
     <tool id="Pins" version="1.0.1.0">
-        <pinItem allocation="84$2" comments="" direction="None" id="RLIN30TX" isUsedBySoftware="true" locked="false" operationMode="" status="0"/>
+        <pinItem allocation="8$1" comments="" direction="None" id="RLIN30TX" isUsedBySoftware="true" locked="false" operationMode="" status="0"/>
         <pinItem allocation="17" comments="" direction="None" id="P0_14" isUsedBySoftware="true" locked="false" operationMode="" status="0"/>
-        <pinItem allocation="83$2" comments="" direction="None" id="RLIN30RX" isUsedBySoftware="true" locked="false" operationMode="" status="0"/>
+        <pinItem allocation="9$1" comments="" direction="None" id="RLIN30RX" isUsedBySoftware="true" locked="false" operationMode="" status="0"/>
         <pinItem allocation="35" comments="" direction="None" id="X1" isUsedBySoftware="true" locked="false" operationMode="" status="0"/>
         <pinItem allocation="34" comments="" direction="None" id="X2" isUsedBySoftware="true" locked="false" operationMode="" status="0"/>
         <pinItem allocation="19" comments="" direction="None" id="TAUJ0O0" isUsedBySoftware="true" locked="false" operationMode="" status="0"/>
@@ -474,7 +474,7 @@
                     <item id="Level15" input="" vlaue="0"/>
                 </option>
             </allocatable>
-            <component description="The Interval Timer Function is timer that generating timer interrupt at regular intervals.When an interrupt is generated, resulting in a square wave. " detailDescription="" display="Interval Timer" id="com.renesas.smc.tools.swcomponent.codegenerator.rh850.intervaltimer" version="1.5.1"/>
+            <component description="The Interval Timer Function is timer that generating timer interrupt at regular intervals.When an interrupt is generated, resulting in a square wave. " detailDescription="" display="Interval Timer" id="com.renesas.smc.tools.swcomponent.codegenerator.rh850.intervaltimer" version="1.7.0"/>
             <allocator channelLevel0="0" channelLevel1="0" channelLevel2="" channelLevel3="" channelLevel4="" channelLevel5="" description="%tauj_allocator.description00" display="TAUJ0_0" id="com.renesas.smc.tools.swcomponent.codegenerator.rh850.intervaltimer.f1kms1s4.tauj00" type="TAUJ">
                 <context/>
             </allocator>
@@ -524,7 +524,7 @@
                     <item id="Level15" input="" vlaue="0"/>
                 </option>
             </allocatable>
-            <component description="The OS Timer (OSTM) is function that operates a timer in the specified count direction (up/down) and generates an arbitrary interrupt." detailDescription="" display="OS Timer" id="com.renesas.smc.tools.swcomponent.codegenerator.rh850.ostm" version="1.4.0"/>
+            <component description="The OS Timer (OSTM) is function that operates a timer in the specified count direction (up/down) and generates an arbitrary interrupt." detailDescription="" display="OS Timer" id="com.renesas.smc.tools.swcomponent.codegenerator.rh850.ostm" version="1.6.0"/>
             <allocator channelLevel0="0" channelLevel1="" channelLevel2="" channelLevel3="" channelLevel4="" channelLevel5="" description="OSTM0" display="OSTM0" id="com.renesas.smc.tools.swcomponent.codegenerator.rh850.ostm.f1km.ostm0" type="">
                 <context/>
             </allocator>
@@ -1428,7 +1428,7 @@
                     </option>
                 </allocatable>
             </allocatable>
-            <component description="The Ports is function that config each pin to be used as genral input/outpu pin or input/output function of internal IP. " detailDescription="" display="Ports" id="com.renesas.smc.tools.swcomponent.codegenerator.rh850.port" version="1.5.0"/>
+            <component description="The Ports is function that config each pin to be used as genral input/outpu pin or input/output function of internal IP. " detailDescription="" display="Ports" id="com.renesas.smc.tools.swcomponent.codegenerator.rh850.port" version="1.7.1"/>
             <allocator channelLevel0="" channelLevel1="" channelLevel2="" channelLevel3="" channelLevel4="" channelLevel5="" description="Input output configuration of PORT" display="PORT" id="com.renesas.smc.tools.swcomponent.codegenerator.rh850.port.f1kms1s4.port" type="port">
                 <context/>
             </allocator>
@@ -1558,7 +1558,7 @@
                     <item id="Transmission/Reception" input="" vlaue="0"/>
                 </option>
             </allocatable>
-            <component description="The Universal Asynchronous Receiver/Transmitter(UART) interface supports serial communication." detailDescription="" display="UART Interface" id="com.renesas.smc.tools.swcomponent.codegenerator.rh850.uart" version="1.5.1"/>
+            <component description="The Universal Asynchronous Receiver/Transmitter(UART) interface supports serial communication." detailDescription="" display="UART Interface" id="com.renesas.smc.tools.swcomponent.codegenerator.rh850.uart" version="1.7.1"/>
             <allocator channelLevel0="0" channelLevel1="" channelLevel2="" channelLevel3="" channelLevel4="" channelLevel5="" description="UART Interface" display="UART0" id="com.renesas.smc.tools.swcomponent.codegenerator.rh850.uart.f1kms1s4S1UART0" type="uart">
                 <context>
                     <option enabled="true" id="Mode" selection="Transmission/Reception">
